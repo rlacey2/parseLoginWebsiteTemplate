@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>My Home</title>
+
+<head>
+<script src="js/jquery-1.11.1.min.js"></script>
+
+  <script type="text/javascript" src="./js/_parseKeys.js"></script> 
+  <script type="text/javascript" src="./js/navigation.js"></script> 
+  <script type="text/javascript" src="./js/home.js"></script> 
+ 
+  <script src="http://www.parsecdn.com/js/parse-1.2.9.min.js"></script>
+ 
+ 
+  <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+ 
+</head>
+
+<body>
+
+
+    
+     
+<div id="navcontainer">
+<ul>
+ 
+</ul>
+</div>
+<h3>My Home</h3>
+     <p />
+     
+Put your business logic interface here!
+
+<p />
+Remove the logged in comment code above or present it somewhere else etc.
+   
+</body>
+<!--
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	//  enterprise2013
+	Parse.initialize(parseAppKey, parseJSKey );
+ 
+	 
+     init();
+   
+      
+ });  // ready
+
+ function init()
+ {
+ 	 currentUser = Parse.User.current();
+ 	 loginStatus();
+ } // init
+
+ function loginStatus()
+ {
+     if (currentUser == null )
+ 	 {
+ 	 $("#navcontainer").append("<h1>No user logged in to parse.com project!</h1>");
+ 	 }
+ else
+ 	 {
+	 $("#navcontainer").append("<h1>Logged in as: " + currentUser.getUsername() + " to parse.com project</h1>");
+ 	 }	
+ } // loginStatus 
+</script>
+-->
+</html>

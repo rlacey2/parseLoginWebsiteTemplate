@@ -1,0 +1,97 @@
+      body {
+        font-family: myriad-pro-1, myriad-pro-2, 'Lucida Grande', 'Arial', sans-serif;
+        margin: 25px;
+      }
+
+      form {
+        width: 600px;
+        border: 2px solid #AA5303;
+        border-radius: 5px;
+        padding: 10px 10px;
+        background-image: -webkit-linear-gradient(top, rgba(170,83,3, 0.1), rgba(170,83,3, 0.5));
+        background-image: -moz-linear-gradient(top, rgba(170,83,3, 0.1), rgba(170,83,3, 0.5));
+        background-image: -ms-linear-gradient(top, rgba(170,83,3, 0.1), rgba(170,83,3, 0.5));
+        background-image: -o-linear-gradient(top, rgba(170,83,3, 0.1), rgba(170,83,3, 0.5));
+        background-image: linear-gradient(top, rgba(170,83,3, 0.1), rgba(170,83,3, 0.5));
+        
+        
+         box-shadow: 0 0 2px rgba(255, 255, 0, 1);
+        -webkit-box-shadow: 0 0 2px rgba(255, 255, 0, 1); 
+        -moz-box-shadow: 0 0 2px rgba(255, 255, 0, 1);
+       
+      }
+
+      /* A bit of custom styling on example 3 */
+       .dirty {
+        box-shadow: 0 0 2px rgba(255, 0, 0, 1);
+        -webkit-box-shadow: 0 0 2px rgba(255, 0, 0, 1); 
+        -moz-box-shadow: 0 0 2px rgba(255, 0, 0, 1);
+        border:2px solid rgba(255,0,0, 0.8);
+        border-radius: 5px;
+      }
+      
+   
+
+      form h2 {
+        font-size: 22px;
+      }
+
+      form > div {
+        padding: 14px; /* change this if area around the inputs is not large enough */
+        font-size: 12px;
+      }
+      
+      form > div input[type="text"],
+      form > div input[type="color"],
+      form > div input[type="date"],
+      form > div input[type="datetime"],
+      form > div input[type="datetime-local"],
+      form > div input[type="email"],
+      form > div input[type="month"],
+      form > div input[type="number"],
+      form > div input[type="range"],
+      form > div input[type="search"],
+      form > div input[type="tel"],
+      form > div input[type="time"],
+      form > div input[type="url"],
+      form > div input[type="week"],
+      form > div textarea,
+      form > div select,
+      form > div button {
+        float: left;
+        width: 200px;
+      }
+      
+      
+      
+      form > div  input[type="radio"],
+      form > div  input[type="checkbox"] {
+        display: inline-block;
+        margin-left: 130px;
+      }
+
+      form > div input[type="submit"] {
+        float: right;
+      }
+      form > div.buttons {
+        clear: both;
+        padding-bottom: 20px;
+      }
+      
+      
+      form > div label
+      {
+    	  float: left;
+          width: 200px;
+      
+      }
+      
+      form > div.large input[type="text"] 
+      {
+    	float: left;  
+        width: 360px;
+      }
+      
+     
+      
+      

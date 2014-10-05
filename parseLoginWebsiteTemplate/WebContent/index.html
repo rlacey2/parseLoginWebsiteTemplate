@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<!--  index = login -->
+<title>parse login template</title>
+
+<head>
+<script src="js/jquery-1.11.1.min.js"></script>
+
+  <script type="text/javascript" src="./js/_parseKeys.js"></script> 
+  <script type="text/javascript" src="./js/navigation.js"></script> 
+  <script type="text/javascript" src="./js/index.js"></script> 
+   
+ <script src="http://www.parsecdn.com/js/parse-1.2.9.min.js"></script>
+ 
+  
+  <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+ 
+</head>
+
+<body>
+     
+<div id="navcontainer">
+<ul>
+ 
+</ul>
+</div>
+<h3>parse login template, bare bones, obviously tidy up the UI.</h3>
+     <p/>
+   
+	<div>
+		
+		<FORM name="jsonDATA">
+			Username
+			<input type="text"      id="txtUsername"             value=""> <br/>
+			Password
+			<input type="password"  id="txtPassword"             value="" > <br/>			
+			
+			
+			<button id="login2parse">Login</button>   <br/>
+			
+			<button id="logoutparse">Logout</button>   
+	 
+		</FORM>	
+	</div>
+	
+	 
+	<div id="result"></div>
+
+	 <p />
+	 
+   Requires: <br/>
+     1) parse.com library from <a href="https://parse.com/docs/api_libraries">here</a><br/>
+     2) app key and client key from parse.com, stored in ./js/_parseKeys.js <br/>
+     <br/> other: <br/> 
+     Security issues - see security <a href="https://parse.com/docs/data#security">here</a>
+      <br/><a href="https://parse.com/docs/js_guide">Parse.com JavaScript Guide</a>
+    
+     
+      <p />
+      You may need to provide a registration page feature!
+   
+        <p />
+        The user session is cached to local storage so it remembers the login until explicit logout.
+	 <p />
+		
+	<h1>SSL Needed For real service</h1>
+ 
+</body>
+
+</html>

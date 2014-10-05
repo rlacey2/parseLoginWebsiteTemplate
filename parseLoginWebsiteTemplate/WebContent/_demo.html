@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Demo</title>
+
+<head>
+<script src="js/jquery-1.11.1.min.js"></script>
+
+  <script type="text/javascript" src="./js/parseKeys.js"></script> 
+  <script type="text/javascript" src="./js/navigation.js"></script> 
+  <script type="text/javascript" src="./js/_demo.js"></script> 
+  <script type="text/javascript" src="./js/jsonHighLight.js"></script>
+ 
+  <script src="https://parse.com/downloads/javascript/parse-1.3.0.min.js"></script>
+ 
+  <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+  <link href="css/jsonpretty.css" rel="stylesheet" type="text/css" />
+ 
+</head>
+
+<body>
+
+
+    
+     
+<div id="navcontainer">
+<ul>
+ 
+</ul>
+</div>
+ <h3>Demo</h3>    
+     
+Contents:<br> <br>    
+<a href="#50">Navigation Links</a> <br>
+<a href="#60">Cloud code via jQuery / parse run api</a> <br>
+<a href="#70">Cloud code via REST/AJAX</a> <br>
+<a href="#80">REST calls via CURL</a> <br>    
+<a href="#85">Cloud code returning JSON</a> <br>  
+<a href="#88">Client code returning JSON</a> <br>  
+
+
+ 
+<br> 
+Read carefully: <p />
+
+<h4>_blank.html / _blank.js</h4>
+There is a script tag commented out with jQuery "$(document).ready" for your use. <p />
+However, a better approach may be to separate the jQuery into separate files, <br />
+with the main business logic for this page in the file xyz.js <br />
+Therefore, save as / copy / paste the _blank.js file mentioned in the script tag and then<br />
+place the new name into the script tag.<br />
+<br />
+Always load the new file xyz.html and confirm no console errors before carrying on.
+ 
+ 
+<h4><a name="50">Navigation Links</h4>
+<p /> The navigation logic is stored in ./js/navigation.js, change as required.
+
+<h4><a name="60">Cloud code via jQuery / parse run api</h4>
+The cloud code is in the CloudCodeJS folder. You will need to edit the <br />
+config/global.json with keys and project name from the parse.com project settings. <br><br>
+There are some test functions provided in the cloud folder, test them below.<br><br>
+
+ 
+<div>
+    <div style="display: inline-block;"><a id="helloworld" href="#">Hello World Function Call</a></div>
+    <div style="display: inline-block;"><div id="f1">&nbsp;</div></div>
+</div> 
+
+<div>
+    <div style="display: inline-block; vertical-align: top;"><a id="swap" href="#">swap the values a and b -> </a></div>
+    <div style="display: inline-block;">
+	    <form action="">
+		a: <input id="a" type="text" name="a" value="11"><br>
+		b: <input id="b" type="text" name="b" value="99">
+		</form>
+	</div>
+	<div style="display: inline-block; vertical-align: top;">
+	     <div id="f2">&nbsp;</div> 
+	 </div>
+ 
+</div> 
+ 
+ 
+<h4><a name="70">Cloud code via REST/AJAX</h4>
+
+<a id="swaprest" href="#">swap the values a and b above with a REST call</a>
+  
+ <h4><a name="80"></a>REST calls via CURL</h4>
+ There are some curl scripts to call cloud functions using REST from a terminal window in the curl_scripts folder.<br>
+ Also shown is the return of a session token and then its use to represent a login.
+ <p/>
+ 
+ <h4><a name="85"></a>Cloud code returning JSON</h4>
+ <a id="users1" href="#">return paged json of users</a>
+ <div id="testresults"></div>
+  
+ <h5>Cloud code is returning this data via a function</h5>
+   
+ <table id="testresultstable" border="1">
+ <tbody>
+ </tbody>
+ 
+
+</table>
+ 
+ <h4><a name="88"></a>Client code returning JSON</h4>
+ <a id="users2" href="#">return paged json of users from this client page via Parse.run</a>
+ 
+ <div id="result2" style="border: 2px solid; border-radius: 5px;">
+  
+ <h5>This code is run from the client side in JavaScript to get cloud data</h5>
+   
+ </div> 
+ 
+ Ensure you have the latest copies of JavaScript libraries.<br/>
+ See <a href="https://parse.com/docs/downloads">https://parse.com/docs/downloads for JavaScript</a>
+   
+ <p />
+ https://parse.com/downloads/javascript/parse-1.3.0.min.js is referenced in this file and is locally available in parse-1.3.0.min.js
+
+</body>
+<!--
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	//  enterprise2013
+	Parse.initialize(parseAppKey, parseJSKey );
+ 
+	 
+     init();
+   
+      
+ });  // ready
+
+ function init()
+ {
+ 	 currentUser = Parse.User.current();
+ 	 loginStatus();
+ } // init
+
+ function loginStatus()
+ {
+     if (currentUser == null )
+ 	 {
+ 	 $("#navcontainer").append("<h1>No user logged in to parse.com project!</h1>");
+ 	 }
+ else
+ 	 {
+	 $("#navcontainer").append("<h1>Logged in as: " + currentUser.getUsername() + " to parse.com project</h1>");
+ 	 }	
+ } // loginStatus 
+</script>
+-->
+</html>

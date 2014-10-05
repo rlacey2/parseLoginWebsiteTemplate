@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>test cases</title>
+
+<head>
+<script src="js/jquery-1.11.1.min.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+  <script type="text/javascript" src="./js/_parseKeys.js"></script> 
+  <script type="text/javascript" src="./js/navigation.js"></script> 
+  <script type="text/javascript" src="./js/jsonHighLight.js"></script>
+  <script 	src="js/testcases.js"></script>
+
+  <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+  <link href="css/jsonpretty.css" rel="stylesheet" type="text/css" />
+
+ 
+ </head>
+
+ <body>
+
+<div id="navcontainer">
+<ul>
+ 
+</ul>
+</div>
+ <h3>Test Cases</h3>
+      <p/>	 
+        <br />
+        Asynchronous response, called in order 1..n, note how the responses are reported.
+       <br />
+       1..10 are called via code on the server side.
+        <br />
+       <br />
+      Some functionality such as jobs() require the Master Key so should be kept secure,
+      some require you to be logged in.
+      <br /> <br />
+      unauthorized => You may have the wrong Javascript key? <br />
+      function not found => you may not have deployed the cloud code or wrong name etc.<br />
+      other messages may be project specific<br />
+      
+ <div id="testresults"></div>
+ 
+ <table id="testresultstable" border="1">
+ <tbody>
+ </tbody>
+ 
+</table>
+ 
+ 
+ <div id="result2">
+ <br>
+ <h2>This code is run from the client side in Javascript</h2>
+  <br>
+ </div> 
+</body>
+
+</html>

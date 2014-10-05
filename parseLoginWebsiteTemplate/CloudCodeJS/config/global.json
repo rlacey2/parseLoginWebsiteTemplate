@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "ExamPapers": {
+            "applicationId": "Get this from parse project settings", 
+            "masterKey": "Get this from parse project settings"
+        }, 
+        "_default": {
+            "link": "This is the parse.com project name"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.2"
+    }
+}
