@@ -1,5 +1,5 @@
- // index = login
-var sTotal = 0;
+// index = login
+ 
 
 // stuff to do when the document is loaded
 
@@ -17,27 +17,21 @@ $(document).ready(function(){
     $('#login2parse').click(function(event){ 
 	     event.preventDefault();
  
-	  	    $("#result").html("");
-	     	 
-	
-	     	currentUser = Parse.User.current();
-	     	if (currentUser) {
-	     		$("#resultraw").html( "logged in already!" ); 
-	     		return;
-	     	} else {
-	     	    // show the signup or login page
-	     	}
-	     	  
 	     var uName =  $("#txtUsername").val();
 	     var pWord =  $("#txtPassword").val();
+	 
 	          	     
 	     if ( uName.length == 0 || pWord.length == 0 )
 	    	 {
-	    	 $("#result").html("<h1>Please complete the data fields!</h1>");
+ 
+			 $("#result").html("<span style='color:red font-weight: 700'>Please complete the data fields!</span>");
+
 	    	 return;
 	    	 }
-	       
-	     $("#result").html("<h1>Attempting to login to parse.com</h1>");
+	     
+		 $("#result").html("<span style='color:blue font-weight: 700'>Attempting to login to parse.com</span>");
+
+		 Parse.User.logOut(); // in case someone is logged in
 	     Parse.User.logIn(uName , pWord, {
 	    	  success: function(user) {
 	    	    // Do stuff after successful login.
@@ -73,14 +67,19 @@ function loginStatus()
 	currentUser = Parse.User.current();
     if (currentUser == null )
 	 {
-	 $("#result").html("<h1>No user logged in!</h1>");
+	 $("#result").html("<span style='color:red'>No user logged in!</span>");
 	 }
 else
 	 {
-	 $("#result").html("<h1>Logged in as: " + currentUser.getUsername() + "</h1>");
+	  logged_in_as();
 	 }	
 }
     
+function logged_in_as()
+{
+	 $("#result").html("<span style='color:green'>Logged in as: " + currentUser.getUsername() + " </span>"); 
+
+}
    
     
  

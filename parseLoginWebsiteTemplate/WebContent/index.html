@@ -24,29 +24,51 @@
  
 </ul>
 </div>
-<h3>parse login template, bare bones, obviously tidy up the UI.</h3>
+<h3>ensure you setup the keys in ./js/_parseKeys.js</h3>
+<h3>parse.com login template, bare bones, obviously tidy up the UI.</h3>
      <p/>
    
-	<div>
+	<div style=" width: 80%;
+    height: 100px;
+   
+    margin: auto;
+    padding: 10px;">
 		
 		<FORM name="jsonDATA">
-			Username
-			<input type="text"      id="txtUsername"             value=""> <br/>
-			Password
-			<input type="password"  id="txtPassword"             value="" > <br/>			
 			
-			
-			<button id="login2parse">Login</button>   <br/>
-			
-			<button id="logoutparse">Logout</button>   
-	 
-		</FORM>	
+
+<div>
+    <div style="display: inline-block; vertical-align: top; width: 10%;">
+     Username</div>
+    <div style="display: inline-block;">
+ 			<input type="text"      id="txtUsername"             value="">  
+
 	</div>
-	
-	 
+	 	<div style="display: inline-block; vertical-align: top;">
 	<div id="result"></div>
 
 	 <p />
+	 </div>
+ 
+</div> 			
+<div>
+    <div style="display: inline-block; vertical-align: top; width: 10%;">
+     Password&nbsp;</div>
+    <div style="display: inline-block;">
+<input type="password"  id="txtPassword"             value="" >
+	</div>
+	<div style="display: inline-block; vertical-align: top;">
+	<button id="login2parse">&nbsp;Login&nbsp;</button>  
+
+	 </div>
+ 
+</div> 
+	     			<button id="logoutparse">Logout</button>
+		</FORM>	
+	</div>
+
+	 
+
 	 
    Requires: <br/>
      1) parse.com library from <a href="https://parse.com/docs/api_libraries">here</a><br/>
@@ -63,7 +85,7 @@
         The user session is cached to local storage so it remembers the login until explicit logout.
 	 <p />
 		
-	<h1>SSL Needed For real service</h1>
+	<h1>SSL Needed For business level website</h1>
  
 </body>
 
