@@ -1,7 +1,7 @@
 var moment =require('cloud/moment.min.js'); // this is uploaded (bug server version, i.e. did not work as expected at time)
 
 // functions:
-// hello
+// hello 
 // swap
 // Users
 
@@ -9,7 +9,7 @@ Parse.Cloud.define("hello", function(request, response) {
 		
 	offset = request.params.offset; // get passed in values
 	console.log("10 offset = " + offset);	
-	
+	 
 	serverTime = moment(); 	// get server time
 	localClientTime = serverTime.add( offset, 'hour').format(); // adjust
     response.success("Hello world at " + localClientTime );  // return value

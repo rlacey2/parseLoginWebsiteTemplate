@@ -1,4 +1,4 @@
-curl -s -X POST                                                           ^
+curl -s -X POST                                                            ^
   -H "X-Parse-Application-Id: XXXXXXXXXXXXXXXXXXX"   ^
   -H "X-Parse-REST-API-Key: YYYYYYYYYYYYYYYYYYYYY"     ^
   -H "Content-Type: application/json"                                     ^

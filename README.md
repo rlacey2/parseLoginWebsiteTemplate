@@ -56,7 +56,7 @@ We will see that we can create a new project by copying the entire structure and
 Cloud Code:
 The edit/deploy/test cycle to the cloud nodejs can be quite inefficient, try fixing as many bugs as possible and writing extra code with each cycle before deploying.
 Time stamps are based on the parse.com servers in UTC, you may need to adjust times according by an offset when displaying on client machines across web time zones. The supplied hello function has been modified to take an offset as a parameter and add it to the server time before returning the time to the client. Another option is to add the offset to returned results before displaying from the client side JavaScript.
-Parse run and parse rest success call-backs walk the return data structure differently, result.* versus data.result.* 
+Parse run and parse rest success call-backs walk the return data structure differently, result.* versus data.result.*  
 parse features
 Each instance of an object in a class is given a unique “objectId”, this is a 10 character alphanumeric value (if supplying from a data file import). When referring to the objectId in JavaScript/NodeJS the field is id as in item.id
 With a class selected the  More->Set Permissions can be used to improve the security on the class to roles, users, public etc.

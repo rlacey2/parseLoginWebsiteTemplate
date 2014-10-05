@@ -36,7 +36,7 @@ $(document).ready(function(){
 	    	 $("#result").html("<h1>Please complete the data fields!</h1>");
 	    	 return;
 	    	 }
-	     
+	       
 	     $("#result").html("<h1>Attempting to login to parse.com</h1>");
 	     Parse.User.logIn(uName , pWord, {
 	    	  success: function(user) {
