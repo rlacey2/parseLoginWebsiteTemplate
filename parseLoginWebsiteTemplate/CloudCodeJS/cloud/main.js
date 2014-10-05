@@ -1,4 +1,4 @@
-var moment =require('cloud/moment.min.js'); // this is uploaded (bug server version)
+var moment =require('cloud/moment.min.js'); // this is uploaded (bug server version, i.e. did not work as expected at time)
 
 // functions:
 // hello

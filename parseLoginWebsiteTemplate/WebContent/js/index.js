@@ -37,7 +37,7 @@ $(document).ready(function(){
 	    	 return;
 	    	 }
 	     
-	     
+	     $("#result").html("<h1>Attempting to login to parse.com</h1>");
 	     Parse.User.logIn(uName , pWord, {
 	    	  success: function(user) {
 	    	    // Do stuff after successful login.
