@@ -75,7 +75,7 @@ else
 	 }	
 }
     
-function logged_in_as()
+function logged_in_as() 
 {
 	 $("#result").html("<span style='color:green'>Logged in as: " + currentUser.getUsername() + " / " + currentUser.getSessionToken() + " </span>"); 
 }
