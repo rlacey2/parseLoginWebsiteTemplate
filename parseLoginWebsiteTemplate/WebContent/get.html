@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Get</title>
+<head>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="./js/_parseKeys.js"></script> 
+  <script type="text/javascript" src="./js/navigation.js"></script> 
+  <script src="https://parse.com/downloads/javascript/parse-1.3.0.min.js"></script>
+</head>
+<body>
+<div id="navcontainer"><ul></ul></div>
+<h3>A simple example of getting an object from parse and some coding ideas.</h3>
+
+<p />
+
+ </body>
+ 
+<script type="text/javascript">
+
+$(document).ready(function(){
+ 	Parse.initialize(parseAppKey, parseJSKey );
+
+	 function getClassObject(objectID, targetClass, successHandler,errorHandler)
+	 {	 
+	 var Obj = Parse.Object.extend(targetClass);
+	 var query = new Parse.Query(Obj);
+	 query.get(objectID, {  success: successHandler,  error:  errorHandler }); 
+	 } 
+	 
+
+	 var specials_handler = {}; // collecting the handlers in an object
+	 
+	 specials_handler.getObjectSuccess = function(object)
+						 {  // The object was retrieved successfully.
+							var objAttributes = object.attributes;  // NB NB
+							// put your business logic for problem here
+							alert("success it worked");
+						 }
+
+	 specials_handler.getObjectError = function(object, error) {
+	    	// failure logic here
+	    	alert("it did not work");
+     															}
+	       
+ });  // ready
+</script>
+
+</html>
