@@ -4,7 +4,7 @@
 // stuff to do when the document is loaded
 
  
-
+ 
 var currentUser = "";
 
 $(document).ready(function(){
