@@ -70,7 +70,7 @@ function loginStatus()
 	 $("#result").html("<span style='color:red'>No user logged in!</span>");
 	 }
 else
-	 {
+	 { 
 	  logged_in_as();
 	 }	
 }
