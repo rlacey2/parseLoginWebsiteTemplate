@@ -4,7 +4,8 @@ $(document).ready(function(){
 	 $("#navcontainer ul").append(generate_anchor("./index.html", "Login") );
 	 $("#navcontainer ul").append(generate_anchor("./home.html", "My Home") );
 	 $("#navcontainer ul").append(generate_anchor("./_demo.html", "Demo") );
-
+	 $("#navcontainer ul").append(generate_anchor("./get.html", "Get") );
+	 
 	 $("#navcontainer ul").append(generate_anchor("./_blank.html", "_Blank") );
  	 
      

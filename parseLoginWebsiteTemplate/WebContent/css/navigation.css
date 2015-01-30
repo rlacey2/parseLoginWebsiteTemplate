@@ -1,5 +1,11 @@
 @CHARSET "ISO-8859-1";
 
+/* prevent vertical scrollbar appearance/disappearance between pages
+causing the navigation menu at the top moving  */
+html {
+  overflow-y: scroll;
+}
+
 #errormsg {  
      background: white;
 	 height: 20px;
@@ -70,7 +76,7 @@ background-color: #369;
  
 -webkit-appearance: menulist;
 box-sizing: border-box;
-align-items: center;
+margin:0px auto;
 white-space: pre;
 -webkit-rtl-ordering: logical;
 color: #000;
